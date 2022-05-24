@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Mostly Fluid</title>
+        <style>
+            body{
+               margin-top: 0px;   
+            }
+
+            #one,#two,#three,#four,#five{
+                height:120px; 
+                width:100%;
+        
+            }
+            #one{
+                background-color: #003476;     
+            }
+            #two{
+                background-color:#0062d2;
+            }
+            #three{
+                background-color:#B4D2F7;
+            }
+            #four{
+                background-color:#D5DFEF;
+            }
+            #five{
+                background-color:#DFE1E5;
+            }
+           @media only screen and (min-width: 480px){
+            #flex-container{
+                    display:flex;
+                    flex-wrap: wrap;
+                }
+                #one{
+                    width: 100%;
+                }
+                #two,#three,#four,#five{
+                    width:50%;
+                }
+            }
+            @media only screen and (min-width:780px){
+                #flex-container{
+                    display:flex;
+                    flex-wrap: wrap;
+                    margin-left:10%;
+                    margin-right:10%;
+                    margin-top: 0px;
+                }
+                #one{
+                  width: 70%;
+                }
+                #two{
+                    width:30%;
+                }
+                #three,#four,#five{
+                    width:33.3%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+      <div id="flex-container">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+        <div id="four"></div>
+        <div id="five"></div>
+    </div>
+    </body>
+</html>
